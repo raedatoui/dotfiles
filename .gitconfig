@@ -1,14 +1,18 @@
 [user]
-	name = Raed Atoui
-	email = ratoui@theorchard.com
+  name = Raed Atoui
+  email = raed.atoui@gmail.com
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [merge]
-	tool = opendiff
+  tool = opendiff
 [diff]
-	tool = opendiff
+  tool = opendiff
 [core]
-	excludesfile = /Users/raed/.gitignore_global	
+  excludesfile = /Users/raed/.gitignore_global
 [fetch]
-	prune = true
+  prune = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
