@@ -1,0 +1,16 @@
+[user]
+	name = Raed Atoui
+	email = ratoui@theorchard.com
+[merge]
+	tool = opendiff
+[diff]
+	tool = opendiff
+[core]
+	excludesfile = /Users/raed/.gitignore_global	
+[fetch]
+	prune = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
